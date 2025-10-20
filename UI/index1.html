@@ -1,7 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #4a9d94;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .calculator {
+      background-color: #4a9d94;
+      padding: 20px;
+      border-radius: 20px;
+      width: 280px;
+    }
+
+    .display {
+      width: 100%;
+      height: 60px;
+      font-size: 24px;
+      text-align: right;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      border: none;
+      background-color: #e8fdf2;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      background-color: #36a2d9;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #1e88c5;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-Hello this is my first repo
+  <div class="calculator">
+    <input type="text" class="display" disabled />
+
+    <div class="buttons">
+      <button>C</button>
+      <button>%</button>
+      <button></button>
+      <button>/</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>*</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
 </body>
 </html>
